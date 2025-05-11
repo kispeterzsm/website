@@ -7,6 +7,7 @@
   
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 2rem; /* Adjust to match or slightly exceed navbar height */
   }
   
   body {
@@ -42,6 +43,30 @@
     margin-bottom: 3rem;
   }
   
+  .subsection {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-radius: 8px;
+    border: 2px solid #1e1e1e;
+    border-left: 4px solid #00bcd4;
+  }
+  
+  .subsection h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .skills-list li {
+    margin-bottom: 0.5rem;
+    color: #cccccc;
+  }
+
   h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -52,21 +77,27 @@
   
   .card-container {
     display: grid;
+    gap: 1rem;
+  }
+  
+  #projects .card-container {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
   }
-  
+
   .card {
     background-color: #1e1e1e;
     padding: 1rem;
     border-radius: 8px;
     border: 2px solid #1e1e1e;
+    border-left: 4px solid #00bcd4;
     transition: transform 0.2s ease;
   }
   
   .card:hover {
     transform: translateY(-5px);
     border: 2px solid #00bcd4;
+    border-left: 4px solid #00bcd4;
   }
   
   .card h3 {
@@ -96,10 +127,6 @@
     font-weight: bold;
   }
 
-  .job {
-    margin-bottom: 2rem;
-  }
-  
   footer {
     text-align: center;
     margin-top: 4rem;
@@ -143,18 +170,3 @@ nav {
   body {
     padding-top: 4rem; /* to offset the fixed nav */
   }
-  
-  /* Scientific Paper Card */
-  .paper-card {
-    border-left: 4px solid #00bcd4;
-  }
-
-  .paper-card:hover{
-    border: 2px solid #00bcd4;
-    border-left: 4px solid #00bcd4;
-  }
-  
-  .paper-card .download-btn:hover {
-    background-color: #00acc1;
-  }
-  
