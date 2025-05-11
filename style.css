@@ -109,28 +109,10 @@
     margin-bottom: 0.5rem;
     color: #ffffff;
   }
-  
-  .card a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #00bcd4;
-    text-decoration: none;
-  }
-  
-  .card a:hover {
-    text-decoration: underline;
-  }
-  
-  .card .btn {
-    display: inline-block;
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
-    padding: 0.3rem 0.6rem;
-    background-color: #00bcd4;
-    color: #121212;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
   }
 
   footer {
@@ -175,4 +157,44 @@ nav {
   
   body {
     padding-top: 4rem; /* to offset the fixed nav */
+  }
+
+
+  .button-container {
+    display: flex;
+    gap: 8px;
+    padding-top: 8px;
+  }
+
+  .button-div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    width: fit-content;
+
+    margin-top: 0rem;
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    background-color: #00bcd4;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+
+  }
+
+  .button-div a:hover {
+    text-decoration: underline;
+  }
+
+  .button-div img {
+    object-fit: contain;
+  }
+
+  .button-div a {
+    display: inline-block;
+    margin-top: 0rem;
+    color: #121212;
+    text-decoration: none;
   }
