@@ -60,11 +60,13 @@
     background-color: #1e1e1e;
     padding: 1rem;
     border-radius: 8px;
+    border: 2px solid #1e1e1e;
     transition: transform 0.2s ease;
   }
   
   .card:hover {
     transform: translateY(-5px);
+    border: 2px solid #00bcd4;
   }
   
   .card h3 {
@@ -144,6 +146,11 @@ nav {
   
   /* Scientific Paper Card */
   .paper-card {
+    border-left: 4px solid #00bcd4;
+  }
+
+  .paper-card:hover{
+    border: 2px solid #00bcd4;
     border-left: 4px solid #00bcd4;
   }
   
