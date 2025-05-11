@@ -85,6 +85,11 @@
     gap: 1.5rem;
   }
 
+  #about .card-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
   .card {
     background-color: #1e1e1e;
     padding: 1rem;

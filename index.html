@@ -13,8 +13,8 @@
         <ul class="menu">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#papers">Research</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#papers">Research</a></li>
             <li><a href="#studies">Studies</a></li>
         </ul>
     </nav>
@@ -34,22 +34,27 @@
             <br>
 
             <div class="card-container">
-            <div class="card">
-                <h3>Languages I Speak</h3>
-                <ul class="skills-list">
-                    <li><strong>English</strong> - Fluent</li>
-                    <li><strong>Spanish</strong> - Intermediate</li>
-                    <li><strong>Hungarian</strong> - Native</li>
-                </ul>
-            </div>
+                <div class="card">
+                    <h3>Languages I Speak</h3>
+                    <ul class="skills-list">
+                        <li><strong>English</strong> - Fluent</li>
+                        <li><strong>Spanish</strong> - Intermediate</li>
+                        <li><strong>Hungarian</strong> - Native</li>
+                    </ul>
+                </div>
 
-            <div class="card">
-                <h3>Programming Languages</h3>
-                <ul class="skills-list">
-                    <li><strong>Python</strong> - <span class="experience" data-start="2018-06-01"></span></li>
-                    <li><strong>Java</strong> - <span class="experience" data-start="2016-06-01"></span></li>
-                </ul>
-            </div>
+                <div class="card">
+                    <h3>Programming Languages</h3>
+                    <ul class="skills-list">
+                        <li><strong>Python</strong> - <span class="experience" data-start="2018-06-01"></span></li>
+                        <li><strong>Java</strong> - <span class="experience" data-start="2016-06-01"></span></li>
+                        <li><strong>C</strong> - 2 years</li>
+                        <li><strong>C++</strong> - 1 year</li>
+                        <li><strong>C#</strong> - 1 year</li>
+                        <li><strong>SQL</strong> - 3 years</li>
+                        <li><strong>PHP</strong> - 4 years</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -73,7 +78,7 @@
             <div class="card-container">
                 <div class="card">
                     <h3>dcalerts</h3>
-                    <p>A python library that lets users send Discord messages from code.</p>
+                    <p>A Python library that lets users send Discord messages from code.</p>
                     <a href="https://pypi.org/project/dcalerts/" class="btn">View Project</a>
                 </div>
                 <div class="card">
@@ -100,10 +105,10 @@
         <section id="studies">
             <h2>Studies</h2>
             <div class="card-container">
-            <div class="card">
-                <h3>Computer Science BSc - University of Szeged</h3>
-                <p><em>2021 - 2025</em></p>
-            </div>
+                <div class="card">
+                    <h3>Computer Science BSc - University of Szeged</h3>
+                    <p><em>2021 - 2025</em></p>
+                </div>
             </div>
         </section>
     </main>
@@ -132,13 +137,12 @@
 
             let experience = '';
             if (years > 0) {
+                if (months > 6){
+                    years++;
+                }
                 experience += `${years} year${years > 1 ? 's' : ''}`;
             }
-            if (months > 0) {
-                //if (experience) experience += ' ';
-                //experience += `${months} month${months > 1 ? 's' : ''}`;
-            }
-            return experience || 'Less than a month';
+            return experience || '<1 year';
         }
 
         document.addEventListener('DOMContentLoaded', () => {
