@@ -85,10 +85,10 @@
     gap: 1.5rem;
   }
 
-  #about .card-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
+  .two-columns {
+    column-count: 2;
+    column-gap: 2rem;
+  }  
 
   .card {
     background-color: #1e1e1e;
@@ -124,6 +124,7 @@
   .card .btn {
     display: inline-block;
     margin-top: 0.5rem;
+    margin-right: 0.5rem;
     padding: 0.3rem 0.6rem;
     background-color: #00bcd4;
     color: #121212;
