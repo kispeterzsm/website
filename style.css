@@ -43,20 +43,11 @@
     margin-bottom: 3rem;
   }
   
-  .subsection {
-    margin-top: 1rem;
-    padding-left: 1rem;
-    border-radius: 8px;
-    border: 2px solid #1e1e1e;
-    border-left: 4px solid #00bcd4;
+  .email {
+    color: #00bcd4;
+    text-decoration: none;
   }
-  
-  .subsection h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-  }
-  
+
   .skills-list {
     list-style: none;
     padding-left: 0;
