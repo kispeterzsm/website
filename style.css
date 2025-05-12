@@ -161,7 +161,7 @@ nav {
     padding-top: 8px;
   }
 
-  .button-div {
+  .button {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -179,15 +179,23 @@ nav {
 
   }
 
-  .button-div a:hover {
+  .button p {
+    color: #121212;
+  }
+
+  .button p:hover {
     text-decoration: underline;
   }
 
-  .button-div img {
+  .button a:hover {
+    text-decoration: underline;
+  }
+
+  .button img {
     object-fit: contain;
   }
 
-  .button-div a {
+  .button a {
     display: inline-block;
     margin-top: 0rem;
     color: #121212;
