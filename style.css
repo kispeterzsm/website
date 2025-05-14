@@ -1,203 +1,227 @@
 /* Base Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 2rem; /* Adjust to match or slightly exceed navbar height */
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
-    line-height: 1.6;
-    padding: 2rem;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-  }
-  
-  .tagline {
-    font-size: 1.1rem;
-    color: #bbbbbb;
-  }
-  
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  section {
-    margin-bottom: 3rem;
-  }
-  
-  .email {
-    color: #00bcd4;
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .skills-list {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .skills-list li {
-    margin-bottom: 0.5rem;
-    color: #cccccc;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  /* Adjust to match or slightly exceed navbar height */
+}
 
-  h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    border-bottom: 1px solid #333;
-    padding-bottom: 0.3rem;
-  }
-  
-  .card-container {
-    display: grid;
-    gap: 1rem;
-  }
-  
-  #projects .card-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 2rem;
+}
 
-  .two-columns {
-    column-count: 2;
-    column-gap: 2rem;
-  }  
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
 
-  .card {
-    background-color: #1e1e1e;
-    padding: 1rem;
-    border-radius: 8px;
-    border: 2px solid #1e1e1e;
-    border-left: 4px solid #00bcd4;
-    transition: transform 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    border: 2px solid #00bcd4;
-    border-left: 4px solid #00bcd4;
-  }
-  
-  .card h3 {
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-  }
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
 
-  .card a {
-    color: #00bcd4;
-  }
+.tagline {
+  font-size: 1.1rem;
+  color: #bbbbbb;
+}
 
-  .icon {
-    width: 2rem;
-    height: 2rem;
-  }
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  footer {
-    text-align: center;
-    margin-top: 4rem;
-    color: #888;
-  }
-  
-  footer a {
-    color: #00bcd4;
-    text-decoration: none;
-  }
-  
-  /* Navigation Menu */
+section {
+  margin-bottom: 3rem;
+}
+
+.email {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  margin-bottom: 0.5rem;
+  color: #cccccc;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+.card-container {
+  display: grid;
+  gap: 1rem;
+}
+
+#projects .card-container {
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.two-columns {
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #1e1e1e;
+  border-left: 4px solid #00bcd4;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border: 2px solid #00bcd4;
+  border-left: 4px solid #00bcd4;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.card a {
+  color: #00bcd4;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  color: #888;
+}
+
+footer a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+/* Navigation Menu */
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #1e1e1e;
-    padding: 0.5rem 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    z-index: 1000;
-  }
-  
-  .menu {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    list-style: none;
-  }
-  
-  .menu a {
-    color: #00bcd4;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .menu a:hover {
-    text-decoration: underline;
-  }
-  
-  body {
-    padding-top: 4rem; /* to offset the fixed nav */
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e1e1e;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menu a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+body {
+  padding-top: 4rem;
+  /* to offset the fixed nav */
+}
 
 
-  .button-container {
-    display: flex;
-    gap: 8px;
-    padding-top: 8px;
-  }
+.button-container {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+}
 
-  .button {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border-radius: 8px;
-    width: fit-content;
+.button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  width: fit-content;
 
-    margin-top: 0rem;
-    margin-right: 0.5rem;
-    padding: 0.3rem 0.6rem;
-    background-color: #00bcd4;
-    color: #121212;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
+  margin-top: 0rem;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  background-color: #00bcd4;
+  color: #121212;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
 
-  }
+}
 
-  .button p {
-    color: #121212;
-  }
+.button p {
+  color: #121212;
+}
 
-  .button p:hover {
-    text-decoration: underline;
-  }
+.button p:hover {
+  text-decoration: underline;
+}
 
-  .button a:hover {
-    text-decoration: underline;
-  }
+.button a:hover {
+  text-decoration: underline;
+}
 
-  .button img {
-    object-fit: contain;
-  }
+.button img {
+  object-fit: contain;
+}
 
-  .button a {
-    display: inline-block;
-    margin-top: 0rem;
-    color: #121212;
-    text-decoration: none;
-  }
+.button a {
+  display: inline-block;
+  margin-top: 0rem;
+  color: #121212;
+  text-decoration: none;
+}
+
+/* dropdown stuff */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

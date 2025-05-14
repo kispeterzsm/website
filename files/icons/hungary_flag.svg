@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="hungary">
+  <g>
+    <path fill="#e21743" d="M63 5v16H1V5a4 4 0 0 1 4-4h54a4 4 0 0 1 4 4Z"></path>
+    <path fill="#eef2fa" d="M1 21h62v22H1z"></path>
+    <path fill="#436f4d" d="M63 43v16a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4V43Z"></path>
+    <path fill="#b51135" d="M1 17v4h.37A22.058 22.058 0 0 1 1 17zm62 4v-4a22.058 22.058 0 0 1-.37 4z"></path>
+    <path fill="#cdd2e1" d="M41 39H23A22 22 0 0 1 1.37 21H1v22h62V21h-.37A22 22 0 0 1 41 39Z"></path>
+    <path fill="#436f4d" d="M1 59a4 4 0 0 0 4 4h54a4 4 0 0 0 4-4V43H1Z"></path>
+    <path fill="#34573c" d="M59 59H5a4 4 0 0 1-4-4v4a4 4 0 0 0 4 4h54a4 4 0 0 0 4-4v-4a4 4 0 0 1-4 4Z"></path>
+    <path fill="#ea5172" d="M59 1H5a4 4 0 0 0-4 4v4a4 4 0 0 1 4-4h54a4 4 0 0 1 4 4V5a4 4 0 0 0-4-4Z"></path>
+  </g>
+</svg>
