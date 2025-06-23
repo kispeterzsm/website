@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        (function () {
+            const lang = navigator.language || navigator.userLanguage;
+            const lowerLang = lang.toLowerCase();
+
+            // Redirect logic
+            if (lowerLang.startsWith('es')) {
+                window.location.href = '/es/';
+            } else if (lowerLang.startsWith('hu')) {
+                window.location.href = '/hu/';
+            } else {
+                window.location.href = '/en/';
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <p>Redirecting to your language version...</p>
+</body>
+
+</html>
