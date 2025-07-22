@@ -124,8 +124,6 @@ footer a {
 
 /* Navigation Menu */
 nav {
-  max-width: 800px;
-  margin: 0 auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -139,19 +137,76 @@ nav {
 .menu {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   list-style: none;
+  max-width: 100%;
+}
+
+.menu li {
+  flex-shrink: 0;
 }
 
 .menu a {
   color: #00bcd4;
   text-decoration: none;
   font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  display: block;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .menu a:hover {
   text-decoration: underline;
 }
+
+/* Mobile specific adjustments */
+@media (max-width: 600px) {
+  .menu {
+    gap: 0.5rem;
+    justify-content: space-around;
+  }
+
+  .menu a {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.35rem;
+  }
+
+  nav {
+    padding: 0.5rem 0.5rem;
+  }
+
+  body {
+    padding: 1rem;
+    padding-top: 3.5rem;
+  }
+}
+
+/* Very small screens - stack vertically if needed */
+@media (max-width: 400px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .menu a {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav {
+    padding: 0.5rem;
+  }
+
+  body {
+    padding-top: 12rem;
+    /* Adjust for vertical menu */
+  }
+}
+
 
 body {
   padding-top: 4rem;
