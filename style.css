@@ -276,6 +276,35 @@ body {
   text-decoration: none;
 }
 
+/* Mobile responsive layout for cards with buttons */
+@media (max-width: 768px) {
+  .card table {
+    display: block;
+  }
+
+  .card table tr {
+    display: block;
+  }
+
+  .card table td {
+    display: block;
+    width: 100% !important;
+  }
+
+  .button-container {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .button-container div {
+    margin-left: 0;
+  }
+
+  .button {
+    width: fit-content;
+  }
+}
+
 /* dropdown stuff */
 .dropdown {
   position: relative;
