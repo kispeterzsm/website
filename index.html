@@ -34,8 +34,9 @@
                 This website showcases the projects I have been a part of, as well as my experience and capabilities.
                 If you'd like to contact me, feel free to send an email to <a href="mailto:mail@kispeterzsm.com"
                     class="email">mail@kispeterzsm.com</a>
-                
-                You can also check out my <a class="email" target="_blank" href="https://www.linkedin.com/in/kispeterzsm/">LinkedIn</a>
+
+                You can also check out my <a class="email" target="_blank"
+                    href="https://www.linkedin.com/in/kispeterzsm/">LinkedIn</a>.
             </p>
             <br>
 
@@ -61,13 +62,17 @@
                         <li><strong>CSS</strong> - <span class="experience" data-start="2018-06-01"></span></li>
                         <li><strong>SQL</strong> - 4 years</li>
                         <li><strong>PHP</strong> - 4 years</li>
+                        <li><strong>Go</strong> - <span class="experience" data-start="2025-11-01"></span></li>
                     </ul>
                 </div>
 
                 <div class="card">
                     <h3>Other things I'm good at</h3>
                     <ul class="skills-list">
-                        <li><strong>Docker</strong></li>
+                        <li><strong>Docker, Docker Compose</strong></li>
+                        <li><strong>Data Science</strong></li>
+                        <li><strong>LLMs</strong></li>
+                        <li><strong>Machine Learning</strong></li>
                         <li><strong>Unity game engine</strong></li>
                         <li><strong>Microsoft Office</strong></li>
                     </ul>
@@ -81,9 +86,12 @@
                 <div class="card">
                     <h3>AI researcher - University of Szeged</h3>
                     <p><em>2024.07. - 2025.07.</em></p>
-                    <p>The team and I worked on various projects related to Artificial Intelligence and Data Science, including
-fine-tuning language models with <em>Reinforcement Learning from Human Feedback</em> (RLHF), a medical
-question-answering project for ACL 2025 (see more under <a href="#research">Research</a>), and finally analyzing data from diabetes patients. 
+                    <p>The team and I worked on various projects related to Artificial Intelligence and Data Science,
+                        including
+                        fine-tuning language models with <em>Reinforcement Learning from Human Feedback</em> (RLHF), a
+                        medical
+                        question-answering project for ACL 2025 (see more under <a href="#research">Research</a>), and
+                        finally analyzing data from diabetes patients.
                     </p>
                 </div>
             </div>
@@ -117,6 +125,30 @@ question-answering project for ACL 2025 (see more under <a href="#research">Rese
                     </table>
                 </div>
 
+                <div class="card">
+                    <table>
+                        <tr>
+                            <td class="card-text">
+                                <div>
+                                    <h3>Information Origin Tracker</h3>
+                                    <p>A complete full stack application developed with my team at Aalborg University,
+                                        MSc semester 1.
+                                        The project aims to combat the growing problem of misinformation on the
+                                        internet, by providing a user friendly way
+                                        of finding the first source of a given piece of information.</p>
+                                </div>
+                            </td>
+                            <td class="button-container">
+                                <div>
+                                    <a class="button" href="https://github.com/kispeterzsm/aau-sw7-iot" target="_blank">
+                                        <img src="/files/icons/github.svg" class="icon" alt="GitHub">
+                                        <p>Github</p>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
 
                 <div class="card">
                     <table>
@@ -126,7 +158,7 @@ question-answering project for ACL 2025 (see more under <a href="#research">Rese
                                     <h3>Defenders of Avalon</h3>
                                     <p>Tower defense style videogame for Android devices. It was written in Java as my
                                         final project at
-                                        university.</p>
+                                        the University of Szeged.</p>
                                 </div>
                             </td>
                             <td class="button-container">
@@ -164,7 +196,8 @@ question-answering project for ACL 2025 (see more under <a href="#research">Rese
                             </td>
                             <td class="button-container">
                                 <div>
-                                    <a class="button" href="https://aclanthology.org/2025.bionlp-share.17/" target="_blank">
+                                    <a class="button" href="https://aclanthology.org/2025.bionlp-share.17/"
+                                        target="_blank">
                                         <img class="icon" src="/files/icons/globe.svg" alt="Globe">
                                         <p>ACL Anthology</p>
                                     </a>
@@ -235,13 +268,13 @@ question-answering project for ACL 2025 (see more under <a href="#research">Rese
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Zsombor Mátyás Kispéter · <a href="mailto:mail@kispeterzsm.com">mail@kispeterzsm.com</a></p>
+        <p>&copy; <a id="footer-currentyear"></a> Zsombor Mátyás Kispéter · <a href="mailto:mail@kispeterzsm.com">mail@kispeterzsm.com</a></p>
     </footer>
 
     <script>
+        const now = new Date();
         function calculateExperience(startDateStr) {
             const startDate = new Date(startDateStr);
-            const now = new Date();
 
             let years = now.getFullYear() - startDate.getFullYear();
             let months = now.getMonth() - startDate.getMonth();
@@ -276,6 +309,8 @@ question-answering project for ACL 2025 (see more under <a href="#research">Rese
                 }
             });
         });
+
+        document.getElementById("footer-currentyear").innerText=now.getFullYear();
     </script>
 </body>
 
