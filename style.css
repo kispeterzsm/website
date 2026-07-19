@@ -35,6 +35,44 @@ header h1 {
   color: #bbbbbb;
 }
 
+.intro-actions {
+  margin-top: 1rem;
+}
+
+.cv-download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.85rem;
+  border: 0;
+  border-radius: 4px;
+  background-color: #00bcd4;
+  color: #121212;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cv-download-button:hover {
+  background-color: #26c6da;
+  text-decoration: underline;
+}
+
+.cv-download-button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.cv-download-button:disabled {
+  cursor: wait;
+  opacity: 0.75;
+}
+
+.cv-download-button .icon {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
 main {
   max-width: 800px;
   margin: 0 auto;
